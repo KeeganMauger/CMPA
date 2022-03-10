@@ -52,10 +52,10 @@ title('Diode I-V Curve: Linear, No Noise')
 legend('I Data','I poly 4th','I poly 8th')
 
 subplot(2,2,2);
-semilogy(V,I)
+semilogy(V,abs(I))
 hold on
-semilogy(V,I_pv4)
-semilogy(V,I_pv8)
+semilogy(V,abs(I_pv4))
+semilogy(V,abs(I_pv8))
 xlabel('V')
 ylabel('I')
 title('Diode I-V Curve: Semilog, No Noise')
@@ -72,10 +72,10 @@ title('Diode I-V Curve: Linear, Noise')
 legend('I Data','I poly 4th','I poly 8th')
 
 subplot(2,2,4);
-semilogy(V,Ivar)
+semilogy(V,abs(Ivar))
 hold on
-semilogy(V,Ivar_pv4)
-semilogy(V,Ivar_pv8)
+semilogy(V,abs(Ivar_pv4))
+semilogy(V,abs(Ivar_pv8))
 xlabel('V')
 ylabel('I')
 title('Diode I-V Curve: Semilog, Noise')
